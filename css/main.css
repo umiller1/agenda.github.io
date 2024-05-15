@@ -77,6 +77,49 @@ h1, h2 {
   font-family: "Berkshire Swash", serif;
   color: #028391;
 }
+footer {
+    background-color: #01204e;
+    padding: 25px 0px;
+}
+footer .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+        flex: 1;
+        min-height: 100px;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f85525;
+        border: 10px outset #f85525;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #01204e;
+        font-weight: 800;
+        transition: all 0.5s;
+        &:hover {
+            background-color: #f8552555;
+            border: 10px inset #f85525;
+            color: #f85525;
+        }
+        &:active {
+            border: 10px ridge #f85525;
+        }
+    }
+    .btn.disabled {
+        pointer-events: none;
+        opacity: 0.7;
+        filter: grayscale(100%);
+    }
+}
 
 @media screen and (max-width: 890px) {
   .card {
@@ -103,5 +146,8 @@ h1, h2 {
   .content ol {
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+  footer .container {
+    width: 90%;
   }
 }
