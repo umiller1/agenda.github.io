@@ -18,7 +18,8 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #01204e;
-  height: 100vh;
+  padding: 25px 0px;
+  min-height: 100vh;
 }
 
 #fun {
@@ -98,5 +99,9 @@ h1, h2 {
   }
   .cont {
     grid-area: main-cont;
+  }
+  .content ol {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
