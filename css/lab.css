@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1, h2 {
+  font-family: "Berkshire Swash", serif;
+  color: #028391;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+p, li, a {
+  font-size: 1.125rem;
+}
+
+main {
+    background: #fff0;
+}
+main .contain {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-auto-rows: 1fr 90% 1fr;
+}
