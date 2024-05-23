@@ -17,13 +17,13 @@ h1, h2 {
   color: #028391;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
 }
 p, li, a {
-  font-size: 1.125rem;
+  font-size: 2rem;
 }
 
 main {
@@ -47,8 +47,8 @@ main {
 .card {
   height: max-content;
   max-height: 70%;
-  width: 70%;
-  max-width: 1000px;
+  width: 95%;
+  max-width: 2440px;
   display: grid;
   grid-template-columns: 30% 1fr;
   gap: 40px;
