@@ -41,10 +41,12 @@ header {
   p:first-of-type {
     margin: 10px 0px 5px;
     max-width: 500px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   p:last-of-type {
     font-style: italic;
+    font-size: 1.5rem;
+    opacity: 0.7;
   }
 }
 
@@ -58,14 +60,16 @@ main {
 }
 
 .contain.a {
-  padding-left: 25px;
+  margin-left: 50px;
   font-size: 1.5rem;
-  height: 100%;
   #greeting {
     margin: 15px 0px 25px;
     span {
-      color: #ae0d4d;
+      color: #ff5500;
       font-weight: 800;
+      font-size: 1.25em;
+      margin-bottom: 5px;
+      display: block;
     }
   }
   ol {
@@ -78,11 +82,11 @@ main {
 }
 
 .contain.b {
-  height: 100%;
   position: relative;
   z-index: 1;
   background-size: cover;
-  overflow: hidden;
+  height: 95%;
+  margin-right: 50px;
   .overlay {
     display: block;
     position: absolute;
@@ -96,7 +100,7 @@ main {
   }
   #fun {
     display: grid;
-    grid-template-rows: max-content max-content 1fr;
+    grid-template-rows: max-content 1fr;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -104,14 +108,22 @@ main {
     position: relative;
     z-index: 1;
     color: #111;
+    min-height: 0;
+    height: 100%;
+    gap: 25px;
     .img-cont {
-      padding-bottom: 10px;
+      min-height: 0;
       img {
         height: 100%;
+        display: block;
       }
     }
     h2 {
       color: #ae0d4d;
+    }
+    p {
+      font-size: 1.5rem;
+      padding-top: 10px;
     }
   }
 }
