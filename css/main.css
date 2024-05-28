@@ -65,7 +65,7 @@ main {
   #greeting {
     margin: 15px 0px 25px;
     span {
-      color: #ff5500;
+      color: #f2641d;
       font-weight: 800;
       font-size: 1.25em;
       margin-bottom: 5px;
@@ -78,6 +78,26 @@ main {
     flex-direction: column;
     gap: 15px;
     padding-left: 25px;
+  }
+  .buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    gap: 25px;
+    margin: 25px 0px 0px;
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2641d;
+      padding: 25px;
+      color: #fff;
+      text-decoration: none;
+      height: 100%;
+      img {
+        width: 60px;
+      }
+    }
   }
 }
 
