@@ -158,3 +158,40 @@ main {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-rows: max-content auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  #attendance p {
+    font-size: 1rem;
+  }
+  
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .contain.a {
+    margin: 0px auto;
+    font-size: 1rem;
+  }
+  
+  .contain.b {
+    height: 800px;
+    margin: 0px auto 50px;
+    #fun p {
+      font-size: 1rem;
+    }
+  }
+}
