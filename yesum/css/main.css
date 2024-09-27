@@ -164,7 +164,7 @@ nav ul.graphics {
             flex-direction: column;
             justify-content: space-between;
         }
-        .type {
+        #activity-type {
             color: #ff8a5e;
             span {
                 display: none;
@@ -173,8 +173,9 @@ nav ul.graphics {
                 display: block;
             }
         }
-        .name {
-            font-size: 8vh;
+        #activity-name {
+            font-size: 3rem;
+            word-wrap: break-word;
         }
     }
     #breakdown {
