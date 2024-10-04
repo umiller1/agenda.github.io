@@ -267,6 +267,9 @@ main {
     .dotd {
         position: relative;
         padding: 25px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         h4 {
             position: absolute;
             top: 30px;
