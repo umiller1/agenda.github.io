@@ -243,8 +243,9 @@ main {
     }
     .container {
         background-color: #005b4b;
+        min-width: 50%;
         width: max-content;
-        max-width: 50%;
+        max-width: 500px;
         h2 {
             margin-bottom: 10px;
         }
