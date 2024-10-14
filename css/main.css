@@ -31,7 +31,7 @@ h3 {
     font-size: 1.625rem;
 }
 p, li, a, blockquote {
-    font-size: 1.125rem;
+    font-size: 1.75rem;
 }
 a {
     color: #ff8a5e;
@@ -150,7 +150,7 @@ nav ul.graphics {
     font-size: 0.1rem;
     margin-top: 5px;
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     strong {
         color: #d60000;
