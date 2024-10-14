@@ -290,4 +290,11 @@ main {
         height: 100%;
         border-radius: 0px;
     }
+    .wm {
+        font-size: 1.25rem;
+        display: block;
+        align-self: bottom;
+        margin-top: 25px;
+        color: #ffe8c7;
+    }
 }
