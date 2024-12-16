@@ -32,7 +32,9 @@ img {
     vertical-align: middle;
     display: inline-block;
 }
-
+.hidden {
+    display: none !important;
+}
 /* header and nav */
 nav {
     display: flex;
