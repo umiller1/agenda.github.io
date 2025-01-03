@@ -54,23 +54,34 @@ header nav {
 }
 
 /* intro section */
-.intro {
+.intro > .container {
     padding-bottom: 25px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 5dvw max-content minmax(0px, 1fr);
+    grid-template-areas: ". txt img";
     align-items: center;
-    gap: 25px;
+    margin: 0px;
+    max-width: none;
+    width: 100%;
+    height: max-content;
     div {
         flex: 1;
     }
-    h2, p {
+    .content {
+        grid-area: txt;
         text-wrap: pretty;
+        max-width: 600px;
     }
     .imgc {
-        height: 200px;
+        grid-area: img;
+        min-height: 200px;
+        height: 100%;
+        padding-left: 25px;
         img {
             display: block;
             height: 100%;
+            max-height: 100%;
+            max-width: 100%;
         }
     }
 }
