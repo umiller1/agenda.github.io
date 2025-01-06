@@ -24,7 +24,7 @@ img {
 }
 .container {
     width: 90dvw;
-    max-width: 1440px;
+    max-width: 1620px;
     margin: 0px auto;
 }
 .hidden {
@@ -56,14 +56,9 @@ header nav {
 /* intro section */
 .intro > .container {
     padding-bottom: 25px;
-    display: grid;
-    grid-template-columns: 5dvw max-content minmax(0px, 1fr);
-    grid-template-areas: ". txt img";
+    display: flex;
+    gap: 25px;
     align-items: center;
-    margin: 0px;
-    max-width: none;
-    width: 100%;
-    height: max-content;
     div {
         flex: 1;
     }
@@ -74,14 +69,34 @@ header nav {
     }
     .imgc {
         grid-area: img;
-        min-height: 200px;
-        height: 100%;
+        height: 200px;
+        max-height: max-content;
         padding-left: 25px;
         img {
             display: block;
             height: 100%;
-            max-height: 100%;
-            max-width: 100%;
         }
+    }
+}
+
+/* Agenda section */
+.agenda > .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    justify-content: space-between;
+    h2 {
+        flex: 100%;
+    }
+    .a-bloc h3 {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .a-bloc ul {
+        padding: 5px 0px 20px 10px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
