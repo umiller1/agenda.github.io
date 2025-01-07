@@ -35,13 +35,18 @@ img {
     pointer-events: none;
 }
 /* header and nav */
+header {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: max-content minmax(0px, 1fr);
+}
 header > .container {
     display: flex;
     gap: 10px 25px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0px;
+    padding-top: 25px;
 }
 header nav {
     display: flex;
@@ -50,10 +55,15 @@ header nav {
     a {
         text-decoration: none;
         color: #7c6dbd;
+        font-weight: 500;
     }
 }
 
 /* intro section */
+#main {
+    display: grid;
+    grid-template-rows: max-content minmax(0px, 1fr);
+}
 .intro > .container {
     padding-bottom: 25px;
     display: flex;
@@ -80,6 +90,11 @@ header nav {
 }
 
 /* Agenda section */
+.agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .agenda > .container {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +102,9 @@ header nav {
     justify-content: space-between;
     h2 {
         flex: 100%;
+    }
+    .a-bloc {
+        flex: 2;
     }
     .a-bloc h3 {
         font-size: 1rem;
@@ -98,5 +116,75 @@ header nav {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+}
+#lunch {
+    background-color: #9ee8a5;
+    margin-top: 25px;
+    text-align: center;
+    padding: 25px 0px;
+    h2 {
+        padding-bottom: 2px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+    }
+}
+
+/* main content */
+main > .container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    min-height: 50dvh;
+    padding: 15px 0px;
+    .content {
+        flex: 1;
+    }
+    .imgc {
+        flex: 1;
+    }
+    .imgc img {
+        mask-image: url(../images/brain2.svg);
+        mask-repeat: no-repeat;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #295732;
+    color: #fefefe;
+    position: relative;
+    min-height: 50dvh;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    align-items: center;
+    overflow: hidden;
+    hr {
+        border: none;
+        border-bottom: 15px solid #9ee8a5;
+    }
+    .shape-fam {
+        position: absolute;
+        right: 5dvh;
+        top: -10px;
+        display: flex;
+        gap: 25px;
+        transform: rotate(5deg);
+        &:nth-child(2) {
+            top: auto;
+            right: auto;
+            left: 5dvh;
+            bottom: -10px;
+        }
+    }
+    .shape {
+        display: block;
+        width: 50px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background-color: #9ee8a5;
     }
 }
