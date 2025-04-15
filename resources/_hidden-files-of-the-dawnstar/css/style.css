@@ -1,0 +1,41 @@
+/*
+    Schimpanzini Bananini
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+header {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    a {
+        display: inline-block;
+        background-color: #e68e21;
+        border: 5px solid #e68e21;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 25px;
+        font-weight: bold;
+        transition: 
+            border-width 0.5s,
+            color 0.5s,
+            background-color 0.5s;
+        &:hover {
+            background-color: transparent;
+            color: #e68e21;
+            border-width: 2px;
+            cursor: url("../imgs/chmzini.png"), auto;
+        }
+    }
+}
