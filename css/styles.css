@@ -136,6 +136,14 @@ main .contain {
             margin-top: 25px;
             border-radius: 15px;
             text-align: center;
+            &.luncho {
+                background-color: transparent;
+                border-top: 1px solid #94d900;
+                border-bottom: 1px solid #94d900;
+                color: #1119;
+                margin: 25px auto 0px;
+                font-size: 1.25rem;
+            }
         }
     }
 }
