@@ -187,4 +187,7 @@ footer {
         border-radius: 50%;
         background-color: #9ee8a5;
     }
+    p {
+        max-width: 800px;
+    }
 }
