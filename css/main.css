@@ -150,6 +150,9 @@ main > .container {
         mask-image: url(../images/brain2.svg);
         mask-repeat: no-repeat;
     }
+    .noBrain img {
+        mask-image: none;
+    }
 }
 
 /* footer */
