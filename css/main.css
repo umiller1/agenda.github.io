@@ -152,6 +152,7 @@ main > .container {
     }
     .noBrain img {
         mask-image: none;
+        max-height: 300px;
     }
 }
 
