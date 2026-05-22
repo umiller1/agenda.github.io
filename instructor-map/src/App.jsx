@@ -1,7 +1,7 @@
 import Card from './instructor_schedule'
 
 function App() {
-  return <App />
+  return <Card />
 }
 
 export default App
