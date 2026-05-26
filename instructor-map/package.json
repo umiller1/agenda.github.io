@@ -5,12 +5,19 @@
   "main": "main.cjs",
   "type": "module",
   "build": {
-  "appId": "com.instructormap.app",
-  "productName": "Instructor Map",
-  "mac": {
-    "target": "dmg"
-  }
-},
+    "appId": "com.instructormap.app",
+    "productName": "Instructor Map",
+    "files": [
+      "dist/**/*",
+      "main.cjs"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+    "target": "nsis"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
