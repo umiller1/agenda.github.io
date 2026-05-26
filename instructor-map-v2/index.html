@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <link rel="icon" type="image/svg+xml" href="favicon.svg">
-        <title>Instructor Map — 2026</title>
+        <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
+        <title>GDWD Instructor Map</title>
         <style>
             * { box-sizing: border-box; margin: 0; padding: 0; }
             body {
@@ -109,6 +109,23 @@
             .cohort-color-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
             .cohort-select, .date-input { padding: 4px 8px; border-radius: 6px; border: 1px solid #ddd; font-size: 12px; background: #fff; }
             .delete-cohort-btn { padding: 3px 10px; border-radius: 6px; border: 1px solid #fca5a5; background: #fef2f2; color: #b91c1c; font-size: 11px; cursor: pointer; }
+            #yearEditable {
+                cursor: pointer;
+                border-bottom: 1px dashed #888;
+                display: inline-block;
+                min-width: 50px;
+                text-align: center;
+            }
+            .year-input {
+                width: 70px;
+                font-size: inherit;
+                font-weight: inherit;
+                font-family: inherit;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 2px 4px;
+            }
         </style>
     </head>
     <body>
