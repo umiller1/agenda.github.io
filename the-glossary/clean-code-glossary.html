@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Clean Code Glossary</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="cleanCode">
+        <h1>The Clean Code Glossary</h1>
+        <h2>HTML Clean Code</h2>
+        <section id="parents" class="section">
+            <h2>Parents & Child(ren) Examples</h2>
+            <div id="btParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;p&gt;</span>
+                    <span class="ce">Basic text child.</span>
+                    <span class="pec">&lt;/p&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="mlbtParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;p&gt;</span>
+                    <span class="ce">
+                        Multi-line basic text children. Lorem ipsum dolor, sit 
+                        amet consectetur adipisicing elit.
+                    </span>
+                    <span class="pec">&lt;/p&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;p&gt;</span>
+                    <span class="ce">
+                        <span class="ceo il">&lt;b&gt;</span>
+                        Child element content.
+                        <span class="cec il">&lt;/b&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/p&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;p&gt;</span>
+                    <span class="ce">
+                        <span class="ceo">&lt;b&gt;</span>
+                        <span class="cech">
+                            Child element content spanning across multiple 
+                            lines.
+                        </span>
+                        <span class="cec">&lt;/b&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/p&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;div&gt;</span>
+                    <span class="ce">
+                        <span class="cebt">
+                            Basic text children.
+                        </span>
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element content.
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/div&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;div&gt;</span>
+                    <span class="ce">
+                        <span class="cebt">
+                            Multi-line basic text children. Lorem ipsum dolor
+                            larimar.
+                        </span>
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element content spanning across multiple
+                            lines.
+                            <span class="ceo">&lt;b&gt;</span>
+                            <span class="cech">
+                                Additional child element here spanning across
+                                multiple lines.
+                            </span>
+                            <span class="cec">&lt;/b&gt;</span>
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/div&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;div&gt;</span>
+                    <span class="ce">
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element content spanning across multiple 
+                            lines.
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element content spanning across multiple 
+                            lines.
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/div&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                    <br><br>
+                    Two or more child elements under the same parent are 
+                    considered siblings.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;div&gt;</span>
+                    <span class="ce">
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element that is also a parent element.
+                            <span class="ceo">&lt;b&gt;</span>
+                            <span class="cech">
+                                Child element here.
+                            </span>
+                            <span class="cec">&lt;/b&gt;</span>
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element that is also a parent element.
+                            <span class="ceo">&lt;b&gt;</span>
+                            <span class="cech">
+                                Child element here.
+                            </span>
+                            <span class="cec">&lt;/b&gt;</span>
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/div&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                    <br><br>
+                    Two or more child elements under the same parent are 
+                    considered siblings.
+                </p>
+            </div>
+            <div id="ceParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;div&gt;</span>
+                    <span class="ce">
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element that is also a parent element.
+                            <span class="ceo">&lt;b&gt;</span>
+                            <span class="cech">
+                                Child element here.
+                            </span>
+                            <span class="cec">&lt;/b&gt;</span>
+                            <span class="ceo">&lt;span&gt;</span>
+                            <span class="cech">
+                                Child element here.
+                            </span>
+                            <span class="cec">&lt;/span&gt;</span>
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                        <span class="ceo">&lt;p&gt;</span>
+                        <span class="cech">
+                            Child element that is also a parent element.
+                            <span class="ceo">&lt;b&gt;</span>
+                            <span class="cech">
+                                Child element here.
+                            </span>
+                            <span class="cec">&lt;/b&gt;</span>
+                            <span class="ceo">&lt;span&gt;</span>
+                            <span class="cech">
+                                Child element here.
+                            </span>
+                            <span class="cec">&lt;/span&gt;</span>
+                        </span>
+                        <span class="cec">&lt;/p&gt;</span>
+                    </span>
+                    <span class="pec">&lt;/div&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                    <br><br>
+                    Two or more child elements under the same parent are 
+                    considered siblings.
+                </p>
+            </div>
+        </section>
+        <section id="attributes" class="section">
+            <h2>HTML Attribute Examples</h2>
+            <div id="singleAttr" class="element">
+                <p class="name">
+                    <span class="peo attr">
+                        &lt;a
+                        <span class="attrSet">
+                            <span class="attrName">href</span>
+                            <span class="attrOp">=</span>
+                            <span class="attrVal">"about.html"</span>
+                        </span>
+                        &gt;
+                    </span>
+                    <span class="ce attr">Basic text child.</span>
+                    <span class="pec attr">&lt;/a&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+            <div id="singleAttr" class="element">
+                <p class="name">
+                    <span class="peo attr">
+                        &lt;a
+                        <span class="attrSet">
+                            <span class="attrName">href</span>
+                            <span class="attrOp">=</span>
+                            <span class="attrVal">"https://first.edu"</span>
+                        </span>
+                        <span class="attrSet">
+                            <span class="attrName">target</span>
+                            <span class="attrOp">=</span>
+                            <span class="attrVal">"_blank"</span>
+                        </span>
+                        &gt;
+                    </span>
+                    <span class="ce attr">Basic text child.</span>
+                    <span class="pec attr">&lt;/a&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+        </section>
+        <section id="layouts" class="section">
+            <h2>Layout Examples</h2>
+            <div id="btParent" class="element">
+                <p class="name">
+                    <span class="peo">&lt;p&gt;</span>
+                    <span class="ce">Basic text child.</span>
+                    <span class="pec">&lt;/p&gt;</span>
+                </p>
+                <p class="desc">
+                    Anything in between
+                    an opening and a closing tag must be indented one level to
+                    the right.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
