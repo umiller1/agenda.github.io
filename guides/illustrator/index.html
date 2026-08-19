@@ -16,7 +16,7 @@
             <section id="shortcuts">
                 <h2>Illustrator Shortcuts</h2>
                 <ul>
-                    <li>
+                    <li class="copy sk">
                         <h3>Copy</h3>
                         <div>
                             <img src="images/mac.png" alt="mac">
@@ -27,7 +27,7 @@
                             <p>CTRL + C</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="paste sk">
                         <h3>Paste</h3>
                         <div>
                             <img src="images/mac.png" alt="mac">
@@ -38,28 +38,112 @@
                             <p>CTRL + V</p>
                         </div>
                     </li>
+                    <li class="cut sk">
+                        <h3>Cut</h3>
+                        <div>
+                            <img src="images/mac.png" alt="mac">
+                            <p>Command + X</p>
+                        </div>
+                        <div>
+                            <img src="images/win.png" alt="windows">
+                            <p>CTRL + X</p>
+                        </div>
+                    </li>
+                    <li class="paste sk">
+                        <h3>Paste in Place</h3>
+                        <div>
+                            <img src="images/mac.png" alt="mac">
+                            <p>Shift + Command + V</p>
+                        </div>
+                        <div>
+                            <img src="images/win.png" alt="windows">
+                            <p>Shift + CTRL + V</p>
+                        </div>
+                    </li>
                 </ul>
             </section>
-            <section id="ai-pdf">
-                <h2>Exporting AI as a PDF</h2>
-                <ol>
-                    <li>
-                        File > Save As
-                    </li>
-                    <li>
-                        Select Adobe PDF (*.PDF) as the format
-                    </li>
-                    <li>
-                        Choose a locationi, name your file, and click Save
-                    </li>
-                    <li>
-                        In the Save Adobe PDF dialog, select the preset 
-                        "High Quality Print".
-                    </li>
-                    <li>
-                        Click Save PDF.
-                    </li>
-                </ol>
+            <section id="workflows">
+                <section class="ai-pdf exports">
+                    <h2>Exporting AI as a PDF</h2>
+                    <ol>
+                        <li>
+                            File > Save As
+                        </li>
+                        <li>
+                            Select Adobe PDF (*.PDF) as the format
+                        </li>
+                        <li>
+                            Choose a location, name your file, and click Save
+                        </li>
+                        <li>
+                            In the Save Adobe PDF dialog, select the preset 
+                            "High Quality Print"
+                        </li>
+                        <li>
+                            Click Save PDF
+                        </li>
+                    </ol>
+                </section>
+                <section class="asset-export exports">
+                    <h2>Exporting Assets with Asset Export</h2>
+                    <ol>
+                        <li>
+                            Select artwork to be exported
+                        </li>
+                        <li>
+                            Drag the slected artwork into the Asset Export Panel
+                        </li>
+                        <li>
+                            Choose desired format
+                        </li>
+                        <li>
+                            Select the export scale and resolution
+                        </li>
+                        <li>
+                            Click Export
+                        </li>
+                        <li>
+                            Choose a location to save it and click select
+                        </li>
+                    </ol>
+                </section>
+                <section class="no-print printing">
+                    <h2>Setting Layer to Not Print</h2>
+                    <ol>
+                        <li>
+                            Open Layers panel
+                        </li>
+                        <li>
+                            Double-click layer that you want to not print to
+                            open Layer Options
+                        </li>
+                        <li>
+                            In Layer Options, uncheck Print
+                        </li>
+                        <li>
+                            Click OK
+                        </li>
+                    </ol>
+                </section>
+                <section class="guidelines grids doc-setup">
+                    <h2>Setting Layer to Not Print</h2>
+                    <ol>
+                        <li>
+                            Create a rectangle that is the size of your artboard
+                        </li>
+                        <li>
+                            Select rectangle and go to Object > Path > Split
+                            into grids
+                        </li>
+                        <li>
+                            Set the number of rows, columns, and your gutter
+                            size
+                        </li>
+                        <li>
+                            Click Ok
+                        </li>
+                    </ol>
+                </section>
             </section>
         </main>
     </body>
