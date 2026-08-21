@@ -6,6 +6,7 @@
 }
 body {
     font-family: "Lato", sans-serif;
+    padding: 25px 0px 40px;
 }
 h1, h2, h3 {
     font-family: "Bebas Neue", sans-serif;
@@ -45,7 +46,7 @@ strong {
         }  
     }
 }
-#workflows {
+#workflows, #design-donts {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -53,7 +54,7 @@ strong {
         flex: 100%;
     }
 }
-#workflows > section {
+#workflows > section, #design-donts > section {
     flex: 100%;
     padding: 15px 30px;
     background-color: #cdfeff;
@@ -68,5 +69,12 @@ strong {
     li > ul, li > ol {
         list-style-type: square;
         padding-left: 15px;
+    }
+}
+#design-donts > section {
+    background-color: #ffcdcd;
+    border: 2px solid #ff7f7f;
+    h3 {
+        margin: 15px 0px 5px;
     }
 }
