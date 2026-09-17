@@ -32,12 +32,17 @@ section {
         background-color: #ffebd4;
     }
     .layout > div .new {
-        background-color: #d4ffdb;
+        background-color: #dfffe4;
     }
     .layout > div .old {
         background-color: #ffecec;
     }
     .layout > div .notes {
         background-color: #d7d7d7;
+    }
+    .layout .rework {
+        background-color: #e8e2ff;
+        border: 1px solid;
+        padding: 15px;
     }
 }
