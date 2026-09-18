@@ -45,4 +45,9 @@ section {
         border: 1px solid;
         padding: 15px;
     }
+    .layout .new strong i {
+        color: #c92c00;
+        font-size: 12px;
+        display: block;
+    }
 }
