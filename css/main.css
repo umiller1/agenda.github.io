@@ -62,13 +62,13 @@ header nav {
 /* intro section */
 #main {
     display: grid;
-    grid-template-rows: max-content minmax(0px, 1fr);
+    grid-template-rows: 30vh minmax(0px, 1fr);
 }
 .intro > .container {
     padding-bottom: 25px;
     display: flex;
     gap: 25px;
-    align-items: center;
+    height: 100%;
     div {
         flex: 1;
     }
@@ -79,8 +79,6 @@ header nav {
     }
     .imgc {
         grid-area: img;
-        height: 200px;
-        max-height: max-content;
         padding-left: 25px;
         img {
             display: block;
